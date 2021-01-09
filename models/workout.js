@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
+// creates the schema for the database
 const WorkoutSchema = new Schema(
     {
       day: {
@@ -39,12 +40,6 @@ const WorkoutSchema = new Schema(
         }
       ]
     },
-    // {
-    //   toJSON: {
-    //     // includes virtual representations of data when requested
-    //     virtuals: true
-    //   }
-    // }
   );
 
 
