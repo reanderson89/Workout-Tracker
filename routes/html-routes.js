@@ -1,7 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../models');
-const fs = require('fs');
 const path = require('path');
 
 // home page

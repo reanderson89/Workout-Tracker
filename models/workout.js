@@ -39,17 +39,14 @@ const WorkoutSchema = new Schema(
         }
       ]
     },
-    {
-      toJSON: {
-        // includes virtual representations of data when requested
-        virtuals: true
-      }
-    }
+    // {
+    //   toJSON: {
+    //     // includes virtual representations of data when requested
+    //     virtuals: true
+    //   }
+    // }
   );
 
-  WorkoutSchema.methods.consoleLog = () => {
-      console.log("This worked");
-  };
 
 const Workout = mongoose.model("Workout", WorkoutSchema);
 
